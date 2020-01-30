@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA3FC00223E340350078CAC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC00123E340350078CAC9 /* AppDelegate.swift */; };
+		AA3FC00423E340350078CAC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC00323E340350078CAC9 /* ViewController.swift */; };
+		AA3FC00623E340390078CAC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA3FC00523E340390078CAC9 /* Assets.xcassets */; };
+		AA3FC00923E340390078CAC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA3FC00723E340390078CAC9 /* Main.storyboard */; };
+		AA3FC01523E340390078CAC9 /* KeyboardSenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC01423E340390078CAC9 /* KeyboardSenderTests.swift */; };
+		AA3FC02023E340390078CAC9 /* KeyboardSenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC01F23E340390078CAC9 /* KeyboardSenderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA3FC01123E340390078CAC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA3FBFF623E340350078CAC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA3FBFFD23E340350078CAC9;
+			remoteInfo = KeyboardSender;
+		};
+		AA3FC01C23E340390078CAC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA3FBFF623E340350078CAC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA3FBFFD23E340350078CAC9;
+			remoteInfo = KeyboardSender;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA3FBFFE23E340350078CAC9 /* KeyboardSender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardSender.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3FC00123E340350078CAC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA3FC00323E340350078CAC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA3FC00523E340390078CAC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA3FC00823E340390078CAC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA3FC00A23E340390078CAC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA3FC00B23E340390078CAC9 /* KeyboardSender.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyboardSender.entitlements; sourceTree = "<group>"; };
+		AA3FC01023E340390078CAC9 /* KeyboardSenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardSenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3FC01423E340390078CAC9 /* KeyboardSenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardSenderTests.swift; sourceTree = "<group>"; };
+		AA3FC01623E340390078CAC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA3FC01B23E340390078CAC9 /* KeyboardSenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardSenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3FC01F23E340390078CAC9 /* KeyboardSenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardSenderUITests.swift; sourceTree = "<group>"; };
+		AA3FC02123E340390078CAC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA3FBFFB23E340350078CAC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3FC00D23E340390078CAC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3FC01823E340390078CAC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA3FBFF523E340350078CAC9 = {
+			isa = PBXGroup;
+			children = (
+				AA3FC00023E340350078CAC9 /* KeyboardSender */,
+				AA3FC01323E340390078CAC9 /* KeyboardSenderTests */,
+				AA3FC01E23E340390078CAC9 /* KeyboardSenderUITests */,
+				AA3FBFFF23E340350078CAC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA3FBFFF23E340350078CAC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FBFFE23E340350078CAC9 /* KeyboardSender.app */,
+				AA3FC01023E340390078CAC9 /* KeyboardSenderTests.xctest */,
+				AA3FC01B23E340390078CAC9 /* KeyboardSenderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA3FC00023E340350078CAC9 /* KeyboardSender */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FC00123E340350078CAC9 /* AppDelegate.swift */,
+				AA3FC00323E340350078CAC9 /* ViewController.swift */,
+				AA3FC00523E340390078CAC9 /* Assets.xcassets */,
+				AA3FC00723E340390078CAC9 /* Main.storyboard */,
+				AA3FC00A23E340390078CAC9 /* Info.plist */,
+				AA3FC00B23E340390078CAC9 /* KeyboardSender.entitlements */,
+			);
+			path = KeyboardSender;
+			sourceTree = "<group>";
+		};
+		AA3FC01323E340390078CAC9 /* KeyboardSenderTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FC01423E340390078CAC9 /* KeyboardSenderTests.swift */,
+				AA3FC01623E340390078CAC9 /* Info.plist */,
+			);
+			path = KeyboardSenderTests;
+			sourceTree = "<group>";
+		};
+		AA3FC01E23E340390078CAC9 /* KeyboardSenderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FC01F23E340390078CAC9 /* KeyboardSenderUITests.swift */,
+				AA3FC02123E340390078CAC9 /* Info.plist */,
+			);
+			path = KeyboardSenderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA3FBFFD23E340350078CAC9 /* KeyboardSender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3FC02423E340390078CAC9 /* Build configuration list for PBXNativeTarget "KeyboardSender" */;
+			buildPhases = (
+				AA3FBFFA23E340350078CAC9 /* Sources */,
+				AA3FBFFB23E340350078CAC9 /* Frameworks */,
+				AA3FBFFC23E340350078CAC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyboardSender;
+			productName = KeyboardSender;
+			productReference = AA3FBFFE23E340350078CAC9 /* KeyboardSender.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA3FC00F23E340390078CAC9 /* KeyboardSenderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3FC02723E340390078CAC9 /* Build configuration list for PBXNativeTarget "KeyboardSenderTests" */;
+			buildPhases = (
+				AA3FC00C23E340390078CAC9 /* Sources */,
+				AA3FC00D23E340390078CAC9 /* Frameworks */,
+				AA3FC00E23E340390078CAC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA3FC01223E340390078CAC9 /* PBXTargetDependency */,
+			);
+			name = KeyboardSenderTests;
+			productName = KeyboardSenderTests;
+			productReference = AA3FC01023E340390078CAC9 /* KeyboardSenderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA3FC01A23E340390078CAC9 /* KeyboardSenderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3FC02A23E340390078CAC9 /* Build configuration list for PBXNativeTarget "KeyboardSenderUITests" */;
+			buildPhases = (
+				AA3FC01723E340390078CAC9 /* Sources */,
+				AA3FC01823E340390078CAC9 /* Frameworks */,
+				AA3FC01923E340390078CAC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA3FC01D23E340390078CAC9 /* PBXTargetDependency */,
+			);
+			name = KeyboardSenderUITests;
+			productName = KeyboardSenderUITests;
+			productReference = AA3FC01B23E340390078CAC9 /* KeyboardSenderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA3FBFF623E340350078CAC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "KEISUKE MASUDA";
+				TargetAttributes = {
+					AA3FBFFD23E340350078CAC9 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					AA3FC00F23E340390078CAC9 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = AA3FBFFD23E340350078CAC9;
+					};
+					AA3FC01A23E340390078CAC9 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = AA3FBFFD23E340350078CAC9;
+					};
+				};
+			};
+			buildConfigurationList = AA3FBFF923E340350078CAC9 /* Build configuration list for PBXProject "KeyboardSender" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA3FBFF523E340350078CAC9;
+			productRefGroup = AA3FBFFF23E340350078CAC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA3FBFFD23E340350078CAC9 /* KeyboardSender */,
+				AA3FC00F23E340390078CAC9 /* KeyboardSenderTests */,
+				AA3FC01A23E340390078CAC9 /* KeyboardSenderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA3FBFFC23E340350078CAC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3FC00623E340390078CAC9 /* Assets.xcassets in Resources */,
+				AA3FC00923E340390078CAC9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3FC00E23E340390078CAC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3FC01923E340390078CAC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA3FBFFA23E340350078CAC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3FC00423E340350078CAC9 /* ViewController.swift in Sources */,
+				AA3FC00223E340350078CAC9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3FC00C23E340390078CAC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3FC01523E340390078CAC9 /* KeyboardSenderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA3FC01723E340390078CAC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3FC02023E340390078CAC9 /* KeyboardSenderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA3FC01223E340390078CAC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA3FBFFD23E340350078CAC9 /* KeyboardSender */;
+			targetProxy = AA3FC01123E340390078CAC9 /* PBXContainerItemProxy */;
+		};
+		AA3FC01D23E340390078CAC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA3FBFFD23E340350078CAC9 /* KeyboardSender */;
+			targetProxy = AA3FC01C23E340390078CAC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA3FC00723E340390078CAC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA3FC00823E340390078CAC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA3FC02223E340390078CAC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA3FC02323E340390078CAC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AA3FC02523E340390078CAC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KeyboardSender/KeyboardSender.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6RS5786BC8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = KeyboardSender/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = keisuke.KeyboardSender;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA3FC02623E340390078CAC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KeyboardSender/KeyboardSender.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6RS5786BC8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = KeyboardSender/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = keisuke.KeyboardSender;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AA3FC02823E340390078CAC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6RS5786BC8;
+				INFOPLIST_FILE = KeyboardSenderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = keisuke.KeyboardSenderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyboardSender.app/Contents/MacOS/KeyboardSender";
+			};
+			name = Debug;
+		};
+		AA3FC02923E340390078CAC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6RS5786BC8;
+				INFOPLIST_FILE = KeyboardSenderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = keisuke.KeyboardSenderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyboardSender.app/Contents/MacOS/KeyboardSender";
+			};
+			name = Release;
+		};
+		AA3FC02B23E340390078CAC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6RS5786BC8;
+				INFOPLIST_FILE = KeyboardSenderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = keisuke.KeyboardSenderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KeyboardSender;
+			};
+			name = Debug;
+		};
+		AA3FC02C23E340390078CAC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6RS5786BC8;
+				INFOPLIST_FILE = KeyboardSenderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = keisuke.KeyboardSenderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KeyboardSender;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA3FBFF923E340350078CAC9 /* Build configuration list for PBXProject "KeyboardSender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3FC02223E340390078CAC9 /* Debug */,
+				AA3FC02323E340390078CAC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA3FC02423E340390078CAC9 /* Build configuration list for PBXNativeTarget "KeyboardSender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3FC02523E340390078CAC9 /* Debug */,
+				AA3FC02623E340390078CAC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA3FC02723E340390078CAC9 /* Build configuration list for PBXNativeTarget "KeyboardSenderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3FC02823E340390078CAC9 /* Debug */,
+				AA3FC02923E340390078CAC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA3FC02A23E340390078CAC9 /* Build configuration list for PBXNativeTarget "KeyboardSenderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3FC02B23E340390078CAC9 /* Debug */,
+				AA3FC02C23E340390078CAC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA3FBFF623E340350078CAC9 /* Project object */;
+}
