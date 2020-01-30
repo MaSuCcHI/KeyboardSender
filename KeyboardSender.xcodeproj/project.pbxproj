@@ -13,6 +13,8 @@
 		AA3FC00923E340390078CAC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA3FC00723E340390078CAC9 /* Main.storyboard */; };
 		AA3FC01523E340390078CAC9 /* KeyboardSenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC01423E340390078CAC9 /* KeyboardSenderTests.swift */; };
 		AA3FC02023E340390078CAC9 /* KeyboardSenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC01F23E340390078CAC9 /* KeyboardSenderUITests.swift */; };
+		AA3FC02E23E3418A0078CAC9 /* BTmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC02D23E3418A0078CAC9 /* BTmanager.swift */; };
+		AA3FC03023E3452E0078CAC9 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC02F23E3452E0078CAC9 /* Const.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		AA3FC01B23E340390078CAC9 /* KeyboardSenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardSenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA3FC01F23E340390078CAC9 /* KeyboardSenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardSenderUITests.swift; sourceTree = "<group>"; };
 		AA3FC02123E340390078CAC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA3FC02D23E3418A0078CAC9 /* BTmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTmanager.swift; sourceTree = "<group>"; };
+		AA3FC02F23E3452E0078CAC9 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +102,11 @@
 			children = (
 				AA3FC00123E340350078CAC9 /* AppDelegate.swift */,
 				AA3FC00323E340350078CAC9 /* ViewController.swift */,
+				AA3FC02D23E3418A0078CAC9 /* BTmanager.swift */,
 				AA3FC00523E340390078CAC9 /* Assets.xcassets */,
 				AA3FC00723E340390078CAC9 /* Main.storyboard */,
 				AA3FC00A23E340390078CAC9 /* Info.plist */,
+				AA3FC02F23E3452E0078CAC9 /* Const.swift */,
 				AA3FC00B23E340390078CAC9 /* KeyboardSender.entitlements */,
 			);
 			path = KeyboardSender;
@@ -254,6 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3FC02E23E3418A0078CAC9 /* BTmanager.swift in Sources */,
+				AA3FC03023E3452E0078CAC9 /* Const.swift in Sources */,
 				AA3FC00423E340350078CAC9 /* ViewController.swift in Sources */,
 				AA3FC00223E340350078CAC9 /* AppDelegate.swift in Sources */,
 			);
