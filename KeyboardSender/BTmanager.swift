@@ -9,17 +9,14 @@
 import Foundation
 import CoreBluetooth
 
-enum ControllType {
-    case mouse
-    case keyboard
-}
+
 
 class BTmanager: NSObject {
     var manager: CBCentralManager
     private var services: [CBService] = []
     private var characteristics: [CBCharacteristic]? = nil
-    private var peripheral: CBPeripheral? = nil
-
+    private var connectedPeripheral: CBPeripheral? = nil
+    
     
     override init() {
         manager = CBCentralManager(delegate: nil, queue: nil)
@@ -30,7 +27,7 @@ class BTmanager: NSObject {
     
     func sendConrollData(_ type: ControllType) {
         let data = Data()
-        guard let peripheral = self.peripheral else {
+        guard let peripheral = self.connectedPeripheral else {
             return
         }
         switch type {
@@ -56,7 +53,7 @@ extension BTmanager:CBCentralManagerDelegate {
         switch central.state {
         case .poweredOn:
             print()
-            manager.scanForPeripherals(withServices: [Const.Bluetooth.serviceUUID], options: nil)
+            manager.scanForPeripherals(withServices: nil, options: nil)
         case .unauthorized:
             print()
         default:
@@ -65,14 +62,17 @@ extension BTmanager:CBCentralManagerDelegate {
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+        if peripheral.name == "Controller" {
+            print(peripheral.name)
+            self.connectedPeripheral = peripheral
+            central.connect(peripheral, options: nil)
+            manager.stopScan()
+        }
         print(peripheral)
-        peripheral.delegate = self
-        peripheral.discoverServices([Const.Bluetooth.mouseUUID,
-                                     Const.Bluetooth.keyboardUUID])
-        central.connect(peripheral, options: nil)
     }
     
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
+
         print("Connect Success")
         manager.stopScan()
         peripheral.delegate = self
@@ -81,7 +81,7 @@ extension BTmanager:CBCentralManagerDelegate {
     }
     
     func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
-        print("Connect Failed")
+        print("Connect Failed \(error.debugDescription)")
     }
     
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
@@ -109,5 +109,5 @@ extension BTmanager: CBPeripheralDelegate {
         }
         print("データの書き込みが失敗しました．\(error)")
     }
-
+    
 }
