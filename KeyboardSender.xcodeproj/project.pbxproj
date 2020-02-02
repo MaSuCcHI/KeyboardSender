@@ -15,6 +15,8 @@
 		AA3FC02023E340390078CAC9 /* KeyboardSenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC01F23E340390078CAC9 /* KeyboardSenderUITests.swift */; };
 		AA3FC02E23E3418A0078CAC9 /* BTmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC02D23E3418A0078CAC9 /* BTmanager.swift */; };
 		AA3FC03023E3452E0078CAC9 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC02F23E3452E0078CAC9 /* Const.swift */; };
+		AA3FC0B623E45FB50078CAC9 /* BluetoothM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC0B523E45FB50078CAC9 /* BluetoothM.swift */; };
+		AA3FC0B823E6D3450078CAC9 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC0B723E6D3450078CAC9 /* ConnectionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		AA3FC02123E340390078CAC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA3FC02D23E3418A0078CAC9 /* BTmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTmanager.swift; sourceTree = "<group>"; };
 		AA3FC02F23E3452E0078CAC9 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		AA3FC0B523E45FB50078CAC9 /* BluetoothM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothM.swift; sourceTree = "<group>"; };
+		AA3FC0B723E6D3450078CAC9 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				AA3FC00123E340350078CAC9 /* AppDelegate.swift */,
 				AA3FC00323E340350078CAC9 /* ViewController.swift */,
 				AA3FC02D23E3418A0078CAC9 /* BTmanager.swift */,
+				AA3FC0B523E45FB50078CAC9 /* BluetoothM.swift */,
+				AA3FC0B723E6D3450078CAC9 /* ConnectionManager.swift */,
 				AA3FC00523E340390078CAC9 /* Assets.xcassets */,
 				AA3FC00723E340390078CAC9 /* Main.storyboard */,
 				AA3FC00A23E340390078CAC9 /* Info.plist */,
@@ -261,9 +267,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA3FC02E23E3418A0078CAC9 /* BTmanager.swift in Sources */,
+				AA3FC0B823E6D3450078CAC9 /* ConnectionManager.swift in Sources */,
 				AA3FC03023E3452E0078CAC9 /* Const.swift in Sources */,
 				AA3FC00423E340350078CAC9 /* ViewController.swift in Sources */,
 				AA3FC00223E340350078CAC9 /* AppDelegate.swift in Sources */,
+				AA3FC0B623E45FB50078CAC9 /* BluetoothM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

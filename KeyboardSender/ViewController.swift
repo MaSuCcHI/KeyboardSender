@@ -10,12 +10,19 @@ import Cocoa
 
 class ViewController: NSViewController {
     
-    var btManager:BTmanager?
+    var connection: Connection!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btManager = BTmanager()
+        connection = Connection()
+        connection.searchService()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear() {
+        let data = Data(base64Encoded: "成功", options: .ignoreUnknownCharacters)
+        connection.sendData(data: Data(base64Encoded: "成功") ?? data!, type: .keyboard)
+        
     }
     
     override var representedObject: Any? {
