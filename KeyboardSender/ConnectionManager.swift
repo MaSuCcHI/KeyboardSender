@@ -21,11 +21,12 @@ class Connection: NSObject {
     override init() {
         session = MCSession(peer: selfID,
                             securityIdentity: nil,
-                            encryptionPreference: .none)
+                            encryptionPreference: .optional)
         browser = MCNearbyServiceBrowser(peer: selfID, serviceType: "isReceiver")
         super.init()
         session.delegate = self
         browser.delegate = self
+        
     }
     
     open func searchService(){
@@ -36,16 +37,20 @@ class Connection: NSObject {
         if !session.connectedPeers.isEmpty {
             switch type {
             case .keyboard:
-                try? self.session.send(data, toPeers: self.session.connectedPeers, with: .reliable)
-                
+                do {
+                    try self.session.send(data as Data, toPeers: self.session.connectedPeers, with: .reliable)
+                } catch {
+                    print(error)
+                }
             case .mouse:
-                try? session.send(data, toPeers: session.connectedPeers, with: .unreliable)
-                break
-            default:
-                break
+                do {
+                    try self.session.send(data as Data, toPeers: self.session.connectedPeers, with: .reliable)
+                } catch {
+                    print(error)
+                }
             }
         } else {
-            print("どこにも接続していません")
+            print("接続されていません")
         }
     }
     
@@ -56,11 +61,16 @@ extension Connection: MCSessionDelegate {
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
         switch state {
         case .connected:
+            print(session.connectedPeers.count)
             browser.stopBrowsingForPeers()
+            let data = "OK".data(using: .utf8)
+            sendData(data: data!, type: .keyboard)
             break
         case .connecting:
+            print(session.connectedPeers.count)
             break
         case .notConnected:
+            print(session.connectedPeers.count)
             browser.startBrowsingForPeers()
             break
         default:
@@ -85,12 +95,16 @@ extension Connection: MCSessionDelegate {
         return
     }
     
+    func session(_ session: MCSession, didReceiveCertificate certificate: [Any]?, fromPeer peerID: MCPeerID, certificateHandler: @escaping (Bool) -> Void) {
+        certificateHandler(true)
+    }
+    
 }
 extension Connection: MCNearbyServiceBrowserDelegate {
     func browser(_ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID, withDiscoveryInfo info: [String : String]?) {
         print("Found \(peerID.displayName)")
         // TODO　パスワード認証を入れる
-        browser.invitePeer(peerID, to: session, withContext: nil, timeout: 0)
+        browser.invitePeer(peerID, to: session, withContext: nil, timeout: 5)
     }
     
     func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {
