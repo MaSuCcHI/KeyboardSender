@@ -11,11 +11,25 @@ import Cocoa
 class ViewController: NSViewController {
     
     var connection: Connection!
+    var mouseMonitor: Any?
+    var keyMonitor: Any?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         connection = Connection()
         connection.searchService()
+        
+        mouseMonitor = NSEvent.addLocalMonitorForEvents(matching: NSEvent.EventTypeMask.mouseMoved) { (event) -> NSEvent? in
+            DispatchQueue.main.async {
+                print("pressure: \(round(100 * event.pressure) / 100)")
+//                print("x:\(event.absoluteX),y:\(event.absoluteY)")
+                print(event.deltaY)
+                print(event.deltaX)
+                self.connection.sendData(data:"\(event.deltaX),\(event.deltaY)".data(using: .utf8)!, type: .mouse)
+            }
+            return event
+        }
+        
         // Do any additional setup after loading the view.
     }
     
