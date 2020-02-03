@@ -44,7 +44,7 @@ class Connection: NSObject {
                 }
             case .mouse:
                 do {
-                    try self.session.send(data as Data, toPeers: self.session.connectedPeers, with: .reliable)
+                    try self.session.send(data as Data, toPeers: self.session.connectedPeers, with: .unreliable)
                 } catch {
                     print(error)
                 }

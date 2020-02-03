@@ -64,8 +64,9 @@ extension BTmanager:CBCentralManagerDelegate {
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
         if peripheral.name == "Controller" {
             print(peripheral.name)
+            let passHash = 111
             self.connectedPeripheral = peripheral
-            central.connect(peripheral, options: nil)
+            central.connect(peripheral, options: ["passwardHash":passHash])
             manager.stopScan()
         }
         print(peripheral)

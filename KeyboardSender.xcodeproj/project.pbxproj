@@ -17,6 +17,9 @@
 		AA3FC03023E3452E0078CAC9 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC02F23E3452E0078CAC9 /* Const.swift */; };
 		AA3FC0B623E45FB50078CAC9 /* BluetoothM.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC0B523E45FB50078CAC9 /* BluetoothM.swift */; };
 		AA3FC0B823E6D3450078CAC9 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC0B723E6D3450078CAC9 /* ConnectionManager.swift */; };
+		AA3FC12923E874010078CAC9 /* MoniterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC12823E874010078CAC9 /* MoniterManager.swift */; };
+		AA3FC12C23E88A350078CAC9 /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC12B23E88A350078CAC9 /* Mouse.swift */; };
+		AA3FC12E23E88B580078CAC9 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FC12D23E88B580078CAC9 /* Keyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		AA3FC02F23E3452E0078CAC9 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		AA3FC0B523E45FB50078CAC9 /* BluetoothM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothM.swift; sourceTree = "<group>"; };
 		AA3FC0B723E6D3450078CAC9 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		AA3FC12823E874010078CAC9 /* MoniterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoniterManager.swift; sourceTree = "<group>"; };
+		AA3FC12B23E88A350078CAC9 /* Mouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse.swift; sourceTree = "<group>"; };
+		AA3FC12D23E88B580078CAC9 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,8 @@
 				AA3FC02D23E3418A0078CAC9 /* BTmanager.swift */,
 				AA3FC0B523E45FB50078CAC9 /* BluetoothM.swift */,
 				AA3FC0B723E6D3450078CAC9 /* ConnectionManager.swift */,
+				AA3FC12823E874010078CAC9 /* MoniterManager.swift */,
+				AA3FC12A23E884010078CAC9 /* MonitorClasses */,
 				AA3FC00523E340390078CAC9 /* Assets.xcassets */,
 				AA3FC00723E340390078CAC9 /* Main.storyboard */,
 				AA3FC00A23E340390078CAC9 /* Info.plist */,
@@ -134,6 +142,15 @@
 				AA3FC02123E340390078CAC9 /* Info.plist */,
 			);
 			path = KeyboardSenderUITests;
+			sourceTree = "<group>";
+		};
+		AA3FC12A23E884010078CAC9 /* MonitorClasses */ = {
+			isa = PBXGroup;
+			children = (
+				AA3FC12B23E88A350078CAC9 /* Mouse.swift */,
+				AA3FC12D23E88B580078CAC9 /* Keyboard.swift */,
+			);
+			path = MonitorClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,8 +287,11 @@
 				AA3FC0B823E6D3450078CAC9 /* ConnectionManager.swift in Sources */,
 				AA3FC03023E3452E0078CAC9 /* Const.swift in Sources */,
 				AA3FC00423E340350078CAC9 /* ViewController.swift in Sources */,
+				AA3FC12E23E88B580078CAC9 /* Keyboard.swift in Sources */,
+				AA3FC12923E874010078CAC9 /* MoniterManager.swift in Sources */,
 				AA3FC00223E340350078CAC9 /* AppDelegate.swift in Sources */,
 				AA3FC0B623E45FB50078CAC9 /* BluetoothM.swift in Sources */,
+				AA3FC12C23E88A350078CAC9 /* Mouse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
